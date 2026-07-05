@@ -279,9 +279,50 @@
 
       <div class="flex flex-col gap-12">
 
-        <!-- Project 1: 今日运势 (真实作品，可交互) -->
+        <!-- Project 1: Telegram Chat UI -->
         <div class="fade-in">
           <div class="grid md:grid-cols-2 gap-8 items-center">
+            <div class="border border-border rounded-sm bg-card overflow-hidden">
+              <div class="border-b border-border px-4 py-3 flex items-center justify-between">
+                <div class="flex items-center gap-2 text-accent">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span class="font-mono text-xs tracking-wider text-muted-foreground">LIVE PREVIEW</span>
+                </div>
+                <div class="flex gap-1.5">
+                  <div class="w-2.5 h-2.5 rounded-full bg-red-500/60"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/60"></div>
+                  <div class="w-2.5 h-2.5 rounded-full bg-green-500/60"></div>
+                </div>
+              </div>
+              <div class="h-72 overflow-hidden bg-[#eef3f8] group relative">
+                <a href="projects/telegram-chat/index.html" target="_blank" rel="noopener" class="block h-full">
+                  <img src="assets/telegram-chat-cover.png" alt="Telegram 聊天界面作品封面" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-xs text-white font-mono tracking-widest">点击打开交互作品</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4">
+              <div class="font-mono text-xs text-muted-foreground tracking-widest">PROJECT 01</div>
+              <h3 class="font-serif text-3xl font-bold text-foreground">Telegram 聊天界面</h3>
+              <div class="text-sm text-accent font-mono">Chat UI · Interactive Prototype</div>
+              <p class="text-muted-foreground leading-relaxed">复刻即时通讯应用的核心体验：会话列表、在线状态、消息气泡、已读状态、移动端侧边栏与输入发送逻辑。左侧演示区可切换联系人并发送消息。</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">React Prototype</span>
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">消息交互</span>
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">响应式布局</span>
+              </div>
+              <a href="projects/telegram-chat/index.html" target="_blank" rel="noopener" class="text-xs text-accent tracking-wider inline-flex items-center gap-1.5 mt-1 hover:opacity-70 transition-opacity w-fit">
+                全屏打开 <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: 今日运势 -->
+        <div class="fade-in" style="transition-delay:0.1s">
+          <div class="grid md:grid-cols-2 gap-8 items-center md:[&>*:first-child]:order-2">
             <div class="border border-border rounded-sm bg-card overflow-hidden">
               <div class="border-b border-border px-4 py-3 flex items-center justify-between">
                 <div class="flex items-center gap-2 text-accent">
@@ -294,19 +335,24 @@
                   <div class="w-2.5 h-2.5 rounded-full bg-green-500/60"></div>
                 </div>
               </div>
-              <div class="h-72 overflow-hidden bg-[#050510]">
-                <iframe class="demo-frame" src="projects/zodiac-fortune/index.html" title="今日运势 交互演示" loading="lazy"></iframe>
+              <div class="h-72 overflow-hidden bg-[#050510] group relative">
+                <a href="projects/zodiac-fortune/index.html" target="_blank" rel="noopener" class="block h-full">
+                  <img src="assets/zodiac-fortune-cover.png" alt="今日运势交互卡片作品封面" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-xs text-white font-mono tracking-widest">点击打开交互作品</span>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="flex flex-col gap-4">
-              <div class="font-mono text-xs text-muted-foreground tracking-widest">PROJECT 01</div>
+              <div class="font-mono text-xs text-muted-foreground tracking-widest">PROJECT 02</div>
               <h3 class="font-serif text-3xl font-bold text-foreground">今日运势</h3>
               <div class="text-sm text-accent font-mono">Zodiac Fortune · Interactive Prototype</div>
-              <p class="text-muted-foreground leading-relaxed">一张沉浸式的占卜卡片：极光背景、星空点缀、转轮抽签动画，点击圆环即可求得今日签文。左侧演示区可直接点击体验。</p>
+              <p class="text-muted-foreground leading-relaxed">一张沉浸式的占卜卡片：极光背景、星空点缀、转轮抽签动画，点击圆环即可求得今日签文。演示保留了随机抽签、结果光效和再次抽签状态切换。</p>
               <div class="flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">Figma Make</span>
-                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">交互动效</span>
                 <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">Canvas 动画</span>
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">抽签交互</span>
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">视觉动效</span>
               </div>
               <a href="projects/zodiac-fortune/index.html" target="_blank" rel="noopener" class="text-xs text-accent tracking-wider inline-flex items-center gap-1.5 mt-1 hover:opacity-70 transition-opacity w-fit">
                 全屏打开 <i data-lucide="external-link" class="w-3 h-3"></i>
@@ -315,14 +361,14 @@
           </div>
         </div>
 
-        <!-- Project 2: McDonald's UI 设计 -->
-        <div class="fade-in" style="transition-delay:0.1s">
-          <div class="grid md:grid-cols-2 gap-8 items-center md:[&>*:first-child]:order-2">
+        <!-- Project 3: McDonald's UI 设计 -->
+        <div class="fade-in" style="transition-delay:0.2s">
+          <div class="grid md:grid-cols-2 gap-8 items-center">
             <div class="border border-border rounded-sm bg-card overflow-hidden">
               <div class="border-b border-border px-4 py-3 flex items-center justify-between">
                 <div class="flex items-center gap-2 text-accent">
-                  <i data-lucide="palette" class="w-4 h-4"></i>
-                  <span class="font-mono text-xs tracking-wider text-muted-foreground">FIGMA DESIGN</span>
+                  <i data-lucide="shopping-cart" class="w-4 h-4"></i>
+                  <span class="font-mono text-xs tracking-wider text-muted-foreground">LIVE PREVIEW</span>
                 </div>
                 <div class="flex gap-1.5">
                   <div class="w-2.5 h-2.5 rounded-full bg-red-500/60"></div>
@@ -330,61 +376,28 @@
                   <div class="w-2.5 h-2.5 rounded-full bg-green-500/60"></div>
                 </div>
               </div>
-              <div class="h-72 bg-gradient-to-br from-[#D4001C] to-[#FFC72C] flex items-center justify-center text-white">
-                <div class="text-center">
-                  <div class="text-4xl mb-2">🍔</div>
-                  <p class="font-semibold">McDonald's UI</p>
-                  <p class="text-xs opacity-75 mt-1">现代化菜单交互设计</p>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col gap-4">
-              <div class="font-mono text-xs text-muted-foreground tracking-widest">PROJECT 02</div>
-              <h3 class="font-serif text-3xl font-bold text-foreground">全新UI界面设计</h3>
-              <div class="text-sm text-accent font-mono">McDonald's Style · Modern Menu System</div>
-              <p class="text-muted-foreground leading-relaxed">基于麦当劳风格的现代化UI设计，包含推荐菜品、新品上市、套餐组合、用户资料等完整模块，提升菜单浏览与点餐体验。采用 React + Tailwind CSS 搭建，整合 Radix UI 和 shadcn/ui 组件库，设计规范完整、交互流畅。</p>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">Figma Design</span>
-                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">React + TypeScript</span>
-                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">Tailwind CSS</span>
-                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">组件库</span>
-              </div>
-              <div class="pt-2 border-t border-border/50">
-                <p class="text-xs text-muted-foreground mb-2">使用技术栈：</p>
-                <ul class="text-xs text-muted-foreground space-y-1">
-                  <li>• React 18.3.1 + TypeScript</li>
-                  <li>• Tailwind CSS v4 + Vite</li>
-                  <li>• Radix UI 组件库</li>
-                  <li>• shadcn/ui 设计系统</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3: 占位 -->
-        <div class="fade-in" style="transition-delay:0.2s">
-          <div class="grid md:grid-cols-2 gap-8 items-center">
-            <div class="border border-dashed border-accent/25 rounded-sm bg-accent/[0.03] overflow-hidden">
-              <div class="border-b border-border px-4 py-3 flex items-center justify-between">
-                <div class="flex items-center gap-2 text-muted-foreground">
-                  <i data-lucide="circle" class="w-4 h-4"></i>
-                  <span class="font-mono text-xs tracking-wider text-muted-foreground">COMING SOON</span>
-                </div>
-              </div>
-              <div class="h-72 flex flex-col items-center justify-center gap-3 text-center px-8">
-                <div class="w-11 h-11 rounded-full border border-accent/30 flex items-center justify-center text-muted-foreground">
-                  <i data-lucide="plus" class="w-4 h-4"></i>
-                </div>
-                <p class="font-serif text-muted-foreground">下一个作品</p>
-                <p class="text-xs text-muted-foreground/70 tracking-wide">即将上线</p>
+              <div class="h-72 overflow-hidden bg-[#121212] group relative">
+                <a href="projects/mcd-app/index.html" target="_blank" rel="noopener" class="block h-full">
+                  <img src="assets/mcd-app-cover.png" alt="麦当劳点餐 UI 作品封面" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div class="absolute inset-x-0 bottom-0 p-4 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                    <span class="text-xs text-white font-mono tracking-widest">点击打开交互作品</span>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="flex flex-col gap-4">
               <div class="font-mono text-xs text-muted-foreground tracking-widest">PROJECT 03</div>
-              <h3 class="font-serif text-3xl font-bold text-foreground/60">下一个作品</h3>
-              <div class="text-sm text-muted-foreground font-mono">敬请期待</div>
-              <p class="text-muted-foreground leading-relaxed">更多 Figma 设计与可交互原型正在整理中，稍后会更新到这里。</p>
+              <h3 class="font-serif text-3xl font-bold text-foreground">麦当劳点餐 UI</h3>
+              <div class="text-sm text-accent font-mono">McDonald's Style · Mobile Ordering System</div>
+              <p class="text-muted-foreground leading-relaxed">基于你提供的 React 代码整理为移动端点餐原型，包含门店头部、搜索、活动 Banner、快捷入口、联名专区、分类筛选、加购和购物车抽屉。</p>
+              <div class="flex flex-wrap gap-2">
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">移动端 UI</span>
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">点餐流程</span>
+                <span class="px-2.5 py-1 text-xs font-mono bg-secondary border border-border text-secondary-foreground rounded-sm">购物车交互</span>
+              </div>
+              <a href="projects/mcd-app/index.html" target="_blank" rel="noopener" class="text-xs text-accent tracking-wider inline-flex items-center gap-1.5 mt-1 hover:opacity-70 transition-opacity w-fit">
+                全屏打开 <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -399,11 +412,24 @@
       <div class="mb-16 fade-in">
         <div class="font-mono text-xs tracking-widest text-accent mb-3">04 — REFLECTIONS</div>
         <h2 class="font-serif text-4xl md:text-5xl font-bold">作品心得</h2>
-        <p class="text-muted-foreground mt-4 max-w-xl">每个项目都是一次思维方式的迭代。以下是我在创作过程中沉淀的一些感悟与反思。</p>
+        <p class="text-muted-foreground mt-4 max-w-xl">这三个作品分别对应通讯工具、情绪化互动与移动端点餐场景。它们让我更清楚地理解：不同产品类型需要不同的体验重心。</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
         <div class="flex flex-col gap-4 border border-border rounded-sm p-6 bg-card h-full hover:border-accent/30 transition-colors fade-in">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-sm bg-accent/10 border border-accent/30 flex items-center justify-center text-accent"><i data-lucide="message-circle" class="w-4 h-4"></i></div>
+            <div>
+              <div class="text-sm font-semibold text-foreground">Telegram 聊天界面</div>
+              <div class="text-xs text-muted-foreground font-mono">Chat UI Prototype</div>
+            </div>
+          </div>
+          <div class="border-t border-border pt-4">
+            <p class="text-sm text-muted-foreground leading-relaxed">这个作品让我意识到，聊天界面的重点不是装饰，而是信息层级与阅读效率。头像、未读数、时间、在线状态和气泡间距都要足够清晰，用户才能在大量消息里快速判断重点。</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col gap-4 border border-border rounded-sm p-6 bg-card h-full hover:border-accent/30 transition-colors fade-in" style="transition-delay:0.12s">
           <div class="flex items-center gap-3">
             <div class="w-8 h-8 rounded-sm bg-accent/10 border border-accent/30 flex items-center justify-center text-accent"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
             <div>
@@ -412,33 +438,20 @@
             </div>
           </div>
           <div class="border-t border-border pt-4">
-            <p class="text-sm text-muted-foreground leading-relaxed">这个作品让我思考「氛围感」如何通过颜色、光影与动效节奏共同营造——占卜结果揭晓的那一瞬间，情绪张力比功能本身更重要。</p>
+            <p class="text-sm text-muted-foreground leading-relaxed">这个作品更偏情绪化体验，功能很简单，但氛围很重要。星空、极光、抽签滚动和结果光效共同服务于“期待感”，让我理解到动效节奏可以直接影响用户的情绪反馈。</p>
           </div>
         </div>
 
-        <div class="flex flex-col gap-4 border border-border rounded-sm p-6 bg-card h-full hover:border-accent/30 transition-colors fade-in" style="transition-delay:0.12s">
+        <div class="flex flex-col gap-4 border border-border rounded-sm p-6 bg-card h-full hover:border-accent/30 transition-colors fade-in" style="transition-delay:0.24s">
           <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-sm bg-accent/10 border border-accent/30 flex items-center justify-center text-accent"><i data-lucide="palette" class="w-4 h-4"></i></div>
+            <div class="w-8 h-8 rounded-sm bg-accent/10 border border-accent/30 flex items-center justify-center text-accent"><i data-lucide="shopping-cart" class="w-4 h-4"></i></div>
             <div>
-              <div class="text-sm font-semibold text-foreground">McDonald's UI</div>
-              <div class="text-xs text-muted-foreground font-mono">全新设计系统</div>
+              <div class="text-sm font-semibold text-foreground">麦当劳点餐 UI</div>
+              <div class="text-xs text-muted-foreground font-mono">Mobile Ordering System</div>
             </div>
           </div>
           <div class="border-t border-border pt-4">
-            <p class="text-sm text-muted-foreground leading-relaxed">这个项目让我深刻体会到了「设计规范的力量」——通过 shadcn/ui 和 Tailwind 的组件化思维，我理解了如何用系统性的方法解决大规模界面一致性问题。</p>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-4 border border-dashed border-accent/25 rounded-sm p-6 bg-accent/[0.03] h-full fade-in" style="transition-delay:0.24s">
-          <div class="flex items-center gap-3">
-            <div class="w-8 h-8 rounded-sm bg-accent/10 border border-accent/30 flex items-center justify-center text-muted-foreground"><i data-lucide="circle" class="w-4 h-4"></i></div>
-            <div>
-              <div class="text-sm font-semibold text-muted-foreground">下一个作品</div>
-              <div class="text-xs text-muted-foreground font-mono">敬请期待</div>
-            </div>
-          </div>
-          <div class="border-t border-border pt-4">
-            <p class="text-sm text-muted-foreground/70 leading-relaxed">心得感悟稍后补充。</p>
+            <p class="text-sm text-muted-foreground leading-relaxed">这个作品让我更关注商业产品的转化路径：搜索、活动 Banner、分类筛选、加购和购物车需要形成连续动线。好的点餐界面不是把内容堆满，而是让用户更快看到想买的东西并完成下单。</p>
           </div>
         </div>
       </div>
@@ -447,10 +460,10 @@
         <div class="border border-accent/30 rounded-sm p-8 bg-accent/5">
           <div class="font-mono text-xs text-accent tracking-widest mb-4">OVERALL REFLECTION</div>
           <blockquote class="font-serif text-2xl font-semibold leading-relaxed text-foreground">
-            "做这些项目让我真正理解了：代码是工具，设计是语言，而用户体验才是最终想说的那句话。"
+            "不同作品需要不同的设计判断：聊天界面追求清晰，运势卡片追求情绪，点餐系统追求效率。"
           </blockquote>
           <div class="mt-6 text-muted-foreground leading-relaxed max-w-2xl">
-            从一开始只想着「功能实现就好」，到后来开始追问「用户为什么要这样操作」——这种思维转变是这一阶段最宝贵的收获。技术学习是有路径的，但设计思维的培养需要不断地观察、质疑和试错。我期待在接下来的作品中，将这种意识更自然地融入每一个决策里。
+            这三个项目让我从不同角度理解了 UI 设计：信息型界面要减少干扰，互动型界面要制造记忆点，交易型界面要缩短决策路径。相比只完成页面，我更希望每个作品都能说明自己为什么这样布局、为什么这样反馈、为什么这样引导用户继续操作。
           </div>
           <div class="mt-4 font-mono text-xs text-muted-foreground">— 刘旭，2025</div>
         </div>
